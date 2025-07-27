@@ -19,7 +19,7 @@ class Products(Base):
     )
 
 
-class Categories(Base):
+class Categories(Base): 
     __tablename__ = 'categories'
 
     id = Column(Integer, primary_key=True, index=True)
@@ -44,5 +44,5 @@ class Users(Base):
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True, index=True)
-    username = Column(Integer, unique=True)
+    username = Column(String, unique=True)
     hashed_password = Column(String)
